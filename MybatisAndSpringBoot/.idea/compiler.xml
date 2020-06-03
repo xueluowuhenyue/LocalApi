@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="MbatisAndSpringBoot" />
+        <module name="MybatisAndSpringBoot" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="MbatisAndSpringBoot" options="-parameters -extdirs E:\IntelliJ2019\ApiTest\MybatisAndSpringBoot/lib" />
+      <module name="MybatisAndSpringBoot" options="-parameters -extdirs E:\IntelliJ2019\MybatisAndSpringBoot/lib" />
+    </option>
+  </component>
+</project>

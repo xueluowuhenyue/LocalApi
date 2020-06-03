@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 命名空间mapper,如果有多个mapper文件，这个必须唯一 -->
+<mapper namespace="com.course.model">
+    <select id="loginCase" parameterType="Integer" resultType="com.course.model.loginCase">
+        select * from logincase where id = #{id};
+    </select>
+
+    <select id="selectUser" parameterType="Integer" resultType="com.course.model.addUserCase">
+        select * from addusercase where id=#{id};
+    </select>
+
+    <insert id="addUser" parameterType="com.course.model.User">
+        insert into
+        user (userName,password,sex,age)
+        values (#{userName},#{password},#{sex},#{age});
+    </insert>
+</mapper>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="loginApi">
+    <test name = "login">
+        <classes>
+            <class name = "com.course.cases.loginTest">
+                <methods>
+                    <include name="loginError"/>
+                    <include name="loginSuccess"/>
+                </methods>
+            </class>
+
+            <class name = "com.course.cases.addUserTest"/>
+        </classes>
+    </test>
+    <listeners>
+        <listener class-name="com.course.config.ExtentTestNGIReporterListener" />
+    </listeners>
+</suite>
